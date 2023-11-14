@@ -1,7 +1,7 @@
-const sheep = [undefined,null,"sheep",false,true,true,false,null,"sheep",undefined]
+const sheep = [undefined,null,false,true,true,false,null,undefined]
 
 const countSheep = sheep.filter(function(value){
-    return value === "sheep"
+    return value === true
 })
 
 console.log(countSheep.length)
