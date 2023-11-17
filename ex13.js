@@ -21,6 +21,10 @@ const adamPropertyName = findObjectProperty(john, function(propertyValue) {
 console.log(adamPropertyName); // bestFriend
 
 
-function findObjectProperty(object, func){
-    
+function findObjectProperty(object, func) {
+    const properties = (Object.keys(object))
+    const values = (Object.values(object))
+    const valueIndex = (values.findIndex(func))
+    return properties[valueIndex]
+
 }
